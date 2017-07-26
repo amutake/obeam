@@ -10,9 +10,7 @@ dev-repo: "https://github.com/yutopp/obeam.git"
 
 available: [ocaml-version >= "4.03.0"]
 
-build: [[ "omake" "PREFIX=%{prefix}%" ]]
-install: [[ "omake" "install" "PREFIX=%{prefix}%" ]]
-remove: [[ "omake" "uninstall" ]]
+build: [["jbuilder" "build" "-p" name "-j" jobs]]
 
 depends: [
   "bitstring"     {>= "2.0.4"}

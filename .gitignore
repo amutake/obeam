@@ -20,3 +20,5 @@
 test/test*.beam
 test/obeam_test
 test/obeam_test.opt
+
+/_build/

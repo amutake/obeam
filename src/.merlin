@@ -1,0 +1,13 @@
+B ../_build/default/src
+FLG -open Obeam__ -w -40
+FLG -ppx "../_build/.ppx/default/ppx_deriving.show+ppx_bitstring/ppx.exe --as-ppx"
+PKG bitstring
+PKG camlzip
+PKG dynlink
+PKG findlib
+PKG findlib.dynload
+PKG findlib.internal
+PKG ppx_deriving.runtime
+PKG result
+PKG unix
+S .

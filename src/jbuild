@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name obeam)
+  (public_name obeam)
+  (libraries (bitstring camlzip ppx_deriving.runtime findlib.dynload))
+  (preprocess (pps (ppx_deriving.show ppx_bitstring)))))
